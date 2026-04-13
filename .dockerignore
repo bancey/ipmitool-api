@@ -1,0 +1,10 @@
+*.exe
+*.test
+*.out
+.git
+.gitignore
+README.md
+config.yaml
+config.yaml.example
+Dockerfile
+.dockerignore
