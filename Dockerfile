@@ -6,7 +6,7 @@ RUN go mod download
 COPY . .
 RUN CGO_ENABLED=0 go build -o ipmitool-api .
 
-FROM alpine:3.20
+FROM alpine:3.23
 
 RUN apk add --no-cache ipmitool
 COPY --from=builder /app/ipmitool-api /usr/local/bin/ipmitool-api
